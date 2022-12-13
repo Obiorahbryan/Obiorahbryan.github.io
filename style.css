@@ -44,10 +44,7 @@ div.position {
     margin-left: 50px;
 }
 
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-}
+/*The Welcome landing page begins here*/
 
 div.mainimg {
     position: relative;
@@ -61,6 +58,7 @@ img.image1 {
 img.logo {
     height: auto;
     max-width: 130px;
+
 }
 
 .menu {
@@ -68,25 +66,31 @@ img.logo {
     width: 10%;
 }
 
+
+@media only screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
 div.capt {
     position: absolute;
-    top: 20%;
+    top: 17%;
     width: 100%;
     text-align: center;
-    font-size: 45px;
+    font-size: 3.5vw;
     color: white;
 }
 
 p.pro {
     position: absolute;
     top: 50%;
-    left: 35%;
+    left: 30%;
     text-align: center;
     border-radius: 20px;
     height: auto;
-    width: 30%;
+    width: 35%;
     padding: 20px;
-    font-size: 25px;
+    font-size: 2.1vw;
 }
 
 p.hire {
@@ -94,17 +98,22 @@ p.hire {
     top: 120%;
     left: 40%;
     text-align: center;
+    display: inline-block;
     border-radius: 15px;
-    height: auto;
-    width: 20%;
-    padding: 15px;
-    font-size: 25px;
+    padding: 14px 25px;
+    font-size: 24px;
     background-color: #d25fad;
     text-decoration: none;
     color: #f1f1f1;
 }
 
-p.hire a {
+@media only screen and (max-height: 450px ) {
+    p.hire {
+        min-width: 200px;
+    }
+}
+
+p.hire a:link {
     color: #f1f1f1;
 }
 
@@ -113,7 +122,123 @@ p.hire:hover {
     background-color: #be539c;
 }
 
-div.sec {
-    background-color: #f1f1f1;
-    padding-bottom: 1000px;
+div.responsive {
+    background-color: white;
+    padding-bottom: 520px;
+}
+
+div.responsive-2 {
+    background-color: rgb(241, 241, 241);
+    padding-bottom: 520px;
+}
+
+[class|=gallery] {
+    float: left;
+    width: 43%;
+    height: auto;
+    margin: 20px 0px;
+}
+
+[class|=galler] {
+    float:left;
+    width: 43%;
+    height: auto;
+    margin: 20px 0px;
+}
+
+div.galler-txt {
+    margin: 20px 60px;
+    overflow: hidden;
+}
+
+div.gallery {
+    background-color: white;
+    margin: 40px 60px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    color: #310e55;
+}
+
+div.galler img{
+    width: 100%;
+}
+
+div.galler {
+    margin: 40px 0px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+div.gallery-txt h2 {
+    color: #310e55;
+}
+
+div.galler-txt h2 {
+    color: #310e55;
+    font-size: xx-large;
+}
+
+div.gallery img {
+    width: 100%;
+}
+
+div.desc {
+    padding: 20px;
+    text-align: center;
+    background-color: #310e55;
+    color: white;
+    font-weight: 700;
+    font-size: large;
+}
+
+div.desc:hover {
+    background-color: #8c6adc;
+    color: #310e55;
+    cursor: pointer;
+}
+
+div.gallery a {
+    text-decoration: none;
+}
+
+div.galler a {
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 700px) {
+    div.gallery ,div.galler {
+        width: 100%;
+        margin: 6px 14px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    div.responsive ,div.responsive-2 {
+    width: 100%;
+    }
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 8px;
+    font-weight: 550;
+    color: #310e55;
+    font-size: 19px;
+}
+
+.col-75 {
+    float: right;
+    width: 65%;
+}
+
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    color: #310e55;
 }
