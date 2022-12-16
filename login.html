@@ -12,7 +12,7 @@
     </head>
 <body class="page">
     <div class="login-container">
-        <img src="img/logo_main2160x408.png" alt="Logo" width="250px" height="auto">
+    <a href="index.html"><img src="img/logo_main2160x408.png" alt="Logo" width="250px" height="auto"></a> 
         <form action="https://httpbin.org/post" method="post" target="_blank">
             <h2>Sign in to your account</h2>
         <p>
@@ -25,17 +25,22 @@
             <br>
             <input type="password" placeholder="Passowrd" required>
         </p>
-        <label>
-            <input type="checkbox" unchecked class="rem-lab"> Remember me
-        </label>
-        <p>
-            <a href="#">Forgot password?</a>
-        </p>
-        <p>
-            <button> Sign in to account </button>
-        </p>
-
+        <div class="rm-for">
+            <label>
+                <input type="checkbox" unchecked class="rem-lab"> Remember me
+            </label>
+            <p>
+                <a href="#">Forgot password?</a>
+            </p>
+        </div>
+        <div class="sign-in">
+            <p>
+                <button> Sign in to account </button>
+            </p>
+        </div>
+        
         </form>
     </div>
+
 </body>
 </html>
