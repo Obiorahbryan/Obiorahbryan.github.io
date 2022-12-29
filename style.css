@@ -179,10 +179,20 @@ div.galler {
     overflow: hidden;
 }
 
-div.gallery-txt h2 {
-    color: #310e55;
+@font-face {
+    font-family: myFirstFont;
+    src: url(font/Sansation_Light.ttf);
 }
 
+@font-face {
+    font-family: myFirstFont;
+    src:url(font/Sansation_Bold.ttf);
+    font-weight: bold;
+}
+
+* {
+    font-family: myFirstFont;
+}
 div.galler-txt h2 {
     color: #310e55;
     font-size: xx-large;
