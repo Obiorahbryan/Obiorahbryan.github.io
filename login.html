@@ -18,12 +18,12 @@
         <p>
             <label for="Email" class="mail-lab">Email Address</label>
             <br>
-            <input type="email" placeholder="Email Address" required>
+            <input type="email" name="email" id="email" autocomplete="on" placeholder="Email Address" required>
         </p>
         <p>
             <label for="password" class="pass-lab">Password</label>
             <br>
-            <input type="password" placeholder="Passowrd" required>
+            <input type="password" name="password" id="password" autocomplete="on" placeholder="Password" required>
         </p>
         <div class="rm-for">
             <label>
@@ -35,10 +35,9 @@
         </div>
         <div class="sign-in">
             <p>
-                <button> Sign in to account </button>
+                <button type="submit" formaction="https://httpbin.org/post" formmethod="post"> Sign in to account </button>
             </p>
         </div>
-        
         </form>
     </div>
 
