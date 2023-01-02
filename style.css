@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(255, 255, 255);
+    background-color: white;
 }
 
 .sidenav {
@@ -130,50 +130,54 @@ p.hire:hover {
     background-color: #be539c;
 }
 
+
+/*Section 2 for the content parts*/
 div.responsive {
+    width: 100%;
+    display: inline-block;
     background-color: white;
-    padding-bottom: 520px;
-}
-
-div.responsive-2 {
-    background-color: rgb(241, 241, 241);
-    padding-bottom: 680px;
-}
-
-[class|=gallery] {
-    float: left;
-    width: 43%;
-    height: auto;
-    margin: 20px 0px;
-}
-
-[class|=galler] {
-    float:left;
-    width: 43%;
-    height: auto;
-    margin: 20px 0px;
-}
-
-div.galler-txt {
-    margin: 20px 60px;
-    overflow: hidden;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-align:left;
 }
 
 div.gallery {
-    background-color: white;
-    margin: 40px 60px;
+    width: 500px;
+    min-width: 400px;
+    margin: 30px 0 0 60px;
+    height: auto;
+    float: left;
     overflow: hidden;
     border: 1px solid #ddd;
     border-radius: 10px;
-    color: #310e55;
 }
 
-div.galler img{
+div.gallery-txt {
+    float: left;
+    width: 500px;
+    margin: 0 60px;
+}
+
+/*Section 2 for the next content parts*/
+
+div.responsive-2 {
+    display: inline-block;
+    background-color: rgb(241, 241, 241);
+    padding-bottom: 40px;
     width: 100%;
 }
 
+div.galler-txt {
+    float: left;
+    width: 500px;
+    margin: 30px 0 0 60px;
+    overflow: hidden;
+}
+
 div.galler {
-    margin: 40px 0px;
+    float: left;
+    width: 500px;
+    margin: 62px 0 0 60px;
     border: 1px solid #ddd;
     border-radius: 10px;
     overflow: hidden;
@@ -193,12 +197,16 @@ div.galler {
 * {
     font-family: myFirstFont;
 }
-div.galler-txt h2 {
+div.galler-txt h2, .gallery-txt h2 {
     color: #310e55;
     font-size: xx-large;
 }
 
 div.gallery img {
+    width: 100%;
+}
+
+div.galler img {
     width: 100%;
 }
 
@@ -482,7 +490,6 @@ button.applynow:hover {
     justify-content: center;
     margin-left: 5%;
 }
-
 .leftcolumn {
     float: left;
     width: 50%;
@@ -490,12 +497,21 @@ button.applynow:hover {
     text-align: center;
     justify-content: center;
     background-color: white;
-    box-shadow: 0 0.5px 2px 4px #f1f1f1;
     margin-top: 25px;
-    border-radius: 15px;
     padding: 0px 20px 20px 20px;
     margin-right: 30px;
 }
+
+.writeup {
+    float: left;
+    border-radius: 15px;
+    margin-bottom: 25px;
+}
+
+.writeup p {
+    text-indent: 50px;
+}
+
 
 .rightcolumn {
     float: left;
@@ -505,6 +521,7 @@ button.applynow:hover {
     padding: 0px 20px 20px 20px;
     margin-top: 25px;
     border-radius: 10px;
+    margin-bottom: 200px;
 }
 
 .writeup {
