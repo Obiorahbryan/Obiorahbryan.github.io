@@ -42,6 +42,7 @@ body {
 div.flexible-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: #310e55;
     position: fixed;
     top: 0;
@@ -64,6 +65,10 @@ div.flexible-container > div a, .menu {
 
 div.flexible-container > div a:hover {
     color: rgb(235, 233, 233);
+}
+
+.top-logo {
+    margin-top: 10px;
 }
 
 .fa-solid {
@@ -361,6 +366,10 @@ div.galler a {
 
     div.galler-txt h2, .gallery-txt h2 {
         font-size: 20px;
+    }
+
+    .niche, .level, .describe {
+        font-size: 13px;
     }
 }
 
