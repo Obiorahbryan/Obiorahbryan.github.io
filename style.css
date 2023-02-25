@@ -39,38 +39,69 @@ body {
 }
 
 /*The Welcome landing page begins here*/
-.holdmenu {
+div.flexible-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #310e55;
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #310e55;
     z-index: 1;
-    padding: 15px 40px;
-    margin: 0;
 }
 
-div.position {
-    position:relative;
-    display:inline;
-    overflow: hidden;
-    left: 35%;
+div.flexible-container > div a, .menu {
+    color: #8c6adc;
+    text-decoration: none;
+    line-height: 65px;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    font-weight: bold;
+    padding: 0 20px;
+    cursor: pointer;
+    font-size: 22px;
 }
 
-
-img.image1 {
-    height: auto;
-    width: 100%;
+div.flexible-container > div a:hover {
+    color: rgb(235, 233, 233);
 }
 
-img.logo {
-    height: auto;
-    max-width: 130px;
-
+.fa-solid {
+    font-size: 20px;
 }
 
-.menu {
-    height: auto;
-    width: 10%;
+.sidenav {
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: #8c6adc;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 30px;
+    color: #f1f1f1;
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #310e55;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
 }
 
 
@@ -80,24 +111,30 @@ img.logo {
 }
 
 .hero-image {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
     position: relative;
     background: url(img/Whats-Working-Women-in-Tech-BLOG_1920x812.jpg) no-repeat center;
     background-size: cover;
     height: 500px;
+    top: 65px;
 }
 
 .hero-text {
-    position: absolute;
-    text-align: center;
-    top: 50%;
-    left: 30%;
-    transform: translate(-15%,-50%);
+    width: 900px;
+    margin-top: 50px;
     color: white;
 }
 
+.hero-text h1{
+    font-size: 80px;
+}
+
 p.pro-write {
-    font-size: 30px;
-    margin-top: -40px;
+    font-size: 25px;
+    margin-top: -65px;
 }
 
 button.hireus {
@@ -115,12 +152,6 @@ button.hireus:hover {
     cursor: pointer;
 }
 
-@media only screen and (max-height: 450px ) {
-    p.hire {
-        min-width: 200px;
-    }
-}
-
 p.hire a:link {
     color: #f1f1f1;
 }
@@ -133,54 +164,55 @@ p.hire:hover {
 
 /*Section 2 for the content parts*/
 div.responsive {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    display: inline-block;
     background-color: white;
     padding-top: 20px;
     padding-bottom: 10px;
     text-align:left;
+    margin-top: 40px;
+    padding: 60px 0;
 }
 
 div.gallery {
     width: 500px;
-    min-width: 400px;
-    margin: 30px 0 0 60px;
-    height: auto;
-    float: left;
+    margin-right: 25px;
     overflow: hidden;
     border: 1px solid #ddd;
     border-radius: 10px;
 }
 
 div.gallery-txt {
-    float: left;
     width: 500px;
-    margin: 0 60px;
+    margin-left: 25px;
 }
 
 /*Section 2 for the next content parts*/
 
 div.responsive-2 {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: rgb(241, 241, 241);
     padding-bottom: 40px;
     width: 100%;
+    padding: 60px 0;
 }
 
 div.galler-txt {
-    float: left;
     width: 500px;
-    margin: 30px 0 0 60px;
-    overflow: hidden;
+    margin-right: 25px;
+    text-align: left;
 }
 
 div.galler {
-    float: left;
     width: 500px;
-    margin: 62px 0 0 60px;
     border: 1px solid #ddd;
     border-radius: 10px;
     overflow: hidden;
+    margin-left: 25px;
 }
 
 @font-face {
@@ -233,15 +265,62 @@ div.galler a {
     text-decoration: none;
 }
 
-@media screen and (max-width: 700px) {
-    div.gallery ,div.galler {
-        width: 100%;
-        margin: 6px 14px;
+* {
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 1074px) {
+    .hero-text {
+        width: 700px;
+        margin-top: 100px;
+    }
+
+    .hero-text h1 {
+        font-size: 60px;
+    }
+    p.pro-write {
+        font-size: 15px;
+        margin-top: -35px;
+    }
+
+    div.responsive, div.responsive-2 {
+        flex-direction: column;
+    }
+
+    div.gallery-txt, div.galler-txt {
+        text-align: center;
+        margin-right: 25px;
+    }
+
+    div.gallery {
+        margin-left: 25px;
+    }
+
+    div.galler {
+        margin-top: 50px;
+        margin-right: 50px;
     }
 }
 
-* {
-    box-sizing: border-box;
+@media only screen and (max-width: 725px) {
+    .hero-text {
+        width: 400px;
+        margin-top: 50px;
+    }
+
+    div.gallery, div.galler {
+        width: 400px;
+    }
+
+    div.gallery-txt, div.galler-txt {
+        width: 400px;
+    }
+}
+
+@media only screen and (max-height: 450px ) {
+    p.hire {
+        min-width: 200px;
+    }
 }
 
 .col-25 {
@@ -259,6 +338,12 @@ div.galler a {
 }
 
 .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.responsive-2:after {
     content: "";
     display: table;
     clear: both;
@@ -311,6 +396,8 @@ ul.list{
     list-style-type:none;
     padding: 15px;
     text-align: center;
+    font-weight: bold;
+    line-height: 40px;
 }
 
 ul li a {
@@ -324,7 +411,7 @@ ul li a:hover {
 
 ul li {
     display: inline;
-    padding: 0px 15px;
+    padding: 15px;
     font-size: 12px;
     text-align: center;
     width: 100%;
@@ -485,11 +572,7 @@ button.applynow:hover {
     background-color: #8c6adc;
     color: #310e55;
 }
-.row {
-    align-items: center;
-    justify-content: center;
-    margin-left: 5%;
-}
+
 .leftcolumn {
     float: left;
     width: 50%;
