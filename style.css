@@ -248,7 +248,7 @@ div.desc {
     background-color: #310e55;
     color: white;
     font-weight: 700;
-    font-size: large;
+    font-size: 20px;
 }
 
 div.desc:hover {
@@ -278,6 +278,7 @@ div.galler a {
     .hero-text h1 {
         font-size: 60px;
     }
+
     p.pro-write {
         font-size: 15px;
         margin-top: -35px;
@@ -315,11 +316,51 @@ div.galler a {
     div.gallery-txt, div.galler-txt {
         width: 400px;
     }
+
+    div.loginTop {
+        display: none;
+    }
 }
 
-@media only screen and (max-height: 450px ) {
-    p.hire {
-        min-width: 200px;
+@media only screen and (max-width: 450px ) {
+    .hero-text {
+        width: 300px;
+    }
+    
+    .hero-text h1 {
+        font-size: 40px;
+    }
+
+    p.pro-write {
+        font-size: 11px;
+        margin-top: -15px;
+    }
+
+    button.hireus {
+        font-size: 14px;
+        padding: 10px 20px;
+        margin-top: 10px;
+    }
+
+    .hero-image {
+        height: 400px;
+    }
+
+    div.gallery, div.galler {
+        width: 250px;
+    }
+
+    div.desc {
+        font-size: 10px;
+    }
+
+    div.gallery-txt, div.galler-txt {
+        width: 300px;
+        font-size: 10px;
+    }
+
+    div.galler-txt h2, .gallery-txt h2 {
+        font-size: 20px;
     }
 }
 
